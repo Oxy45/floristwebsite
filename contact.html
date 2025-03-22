@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us - La Vie En Rose</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,30 +13,72 @@
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
     
-    <section class="contact-form">
-        <h2>Get in Touch</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit" onclick="submitForm(event)">Submit</button>
-        </form>
+    <section class="contact-wrapper">
+        <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <div class="info-item">
+                <h4>Address</h4>
+                <p>Bashundhara, Dhaka, Bangladesh 12345</p>
+            </div>
+            <div class="info-item">
+                <h4>Phone</h4>
+                <p>(555) 123-4567</p>
+            </div>
+            <div class="info-item">
+                <h4>Email</h4>
+                <p>info.lavieenrose@gmail.com</p>
+            </div>
+            <div class="info-item">
+                <h4>Hours</h4>
+                <p>Monday - Friday: 9am - 6pm<br>Saturday: 10am - 4pm<br>Sunday: Closed</p>
+            </div>
+        </div>
+        
+        <div class="store-images">
+            <img src="Flowershop1.jpg" alt="La Vie En Rose Shop">
+            <img src="Flowershop2.jpg" alt="Inside La Vie En Rose Shop">
+        </div>
+        
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="service">Service of Interest</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service</option>
+                        <option value="Flower Delivery">Inside Dhaka (60 Taka)</option>
+                        <option value="Flower Delivery">Outside Dhaka (120 Taka)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Online Store. All rights reserved.</p>
+        <p>&copy; 2025 La Vie En Rose. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>

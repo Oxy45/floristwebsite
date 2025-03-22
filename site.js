@@ -1,6 +1,4 @@
 // <!-- Name: Anondo Sreyan, ID: 2220504  -->
-// <!-- Name: Anondo Sreyan, ID: 2220504  -->
-
 function showAlert() {
     alert("Welcome to La Vie En Rose Store!");
 }
